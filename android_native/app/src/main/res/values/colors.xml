@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="school_navy">#090C16</color>
+    <color name="school_gold">#D8B45A</color>
+    <color name="school_green">#2E9B62</color>
+    <color name="school_red">#C75151</color>
+    <color name="school_surface">#FFFFFF</color>
+</resources>

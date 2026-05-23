@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gameRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/school_navy"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60"
+        android:textColor="@color/school_gold"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/wordCard"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="@color/school_surface"
+        android:padding="18dp"
+        app:layout_constraintBottom_toTopOf="@id/controlsRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timerText">
+
+        <TextView
+            android:id="@+id/wordText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/school_navy"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="44dp"
+            android:background="@color/school_gold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/controlsRow"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/skipButton"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Пропуск" />
+
+        <Button
+            android:id="@+id/guessedButton"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Верно" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

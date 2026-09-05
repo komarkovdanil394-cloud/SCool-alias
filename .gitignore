@@ -5,6 +5,7 @@ __pycache__/
 
 build/
 android_native/.gradle/
+android_native/app/.cxx/
 android_native/local.properties
 android_native/app/build/
 android_native/build/

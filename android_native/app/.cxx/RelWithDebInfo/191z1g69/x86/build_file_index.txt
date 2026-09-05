@@ -1,1 +1,0 @@
-C:\Users\User\Desktop\alias_project\android_native\app\src\main\cpp\CMakeLists.txt

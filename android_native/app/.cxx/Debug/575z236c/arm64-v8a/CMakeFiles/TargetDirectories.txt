@@ -1,3 +1,0 @@
-C:/Users/User/Desktop/alias_project/android_native/app/.cxx/Debug/575z236c/arm64-v8a/CMakeFiles/schoolaliascore.dir
-C:/Users/User/Desktop/alias_project/android_native/app/.cxx/Debug/575z236c/arm64-v8a/CMakeFiles/edit_cache.dir
-C:/Users/User/Desktop/alias_project/android_native/app/.cxx/Debug/575z236c/arm64-v8a/CMakeFiles/rebuild_cache.dir

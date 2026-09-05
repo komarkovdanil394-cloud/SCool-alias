@@ -19,7 +19,9 @@ class GameViewModel(
         durationSeconds: Int,
         isLastWordEnabled: Boolean,
     ) {
-        val normalizedDuration = if (durationSeconds in ALLOWED_DURATIONS) durationSeconds else 60
+        val normalizedDuration = NativeGameCore.normalizeDuration(
+            if (durationSeconds in ALLOWED_DURATIONS) durationSeconds else 60,
+        )
         wordQueue = wordsRepository.wordsFor(subject, difficulty).toMutableList()
         timerExpired = false
         val firstWord = nextWord()
